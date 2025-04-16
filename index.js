@@ -6,7 +6,7 @@ var packageName = require('./package.json').name
 var packageVersion = require('./package.json').version
 
 function getBaseVersion(v) {
-  return String(v).split(/\.patch/)[0]
+  return String(v).split(/-patch/)[0]
 }
 
 if (vueVersion && vueVersion !== getBaseVersion(packageVersion)) {

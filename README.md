@@ -1,16 +1,60 @@
 # vue-template-compiler-patched
 
+A security-patched version of vue-template-compiler to fix the prototype pollution vulnerability (CVE-2024-6783).
+
 > This package is auto-generated. For pull requests please see [src/platforms/web/entry-compiler.js](https://github.com/vuejs/vue/tree/dev/src/platforms/web/entry-compiler.js).
 
 This package can be used to pre-compile Vue 2.0 templates into render functions to avoid runtime-compilation overhead and CSP restrictions. In most cases you should be using it with [`vue-loader`](https://github.com/vuejs/vue-loader), you will only need it separately if you are writing build tools with very specific needs.
 
 ## Installation
 
-``` bash
-npm install vue-template-compiler-patched
+Choose the installation approach that works best for you.
+
+### Alias
+
+Installs the patched compiler under the original `vue-template-compiler` name, satisfying any peer dependencies or `require('vue-template-compiler')` lookups (e.g. by @vue/test-utils).
+
+#### npm
+
+```sh
+npm install vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1 --save-dev
 ```
 
-``` js
+#### pnpm
+
+```sh
+pnpm add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1 --save-dev
+```
+
+#### Yarn
+
+```sh
+yarn add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1 --dev
+```
+
+### Standard
+
+Installs the patched compiler under its scoped name. Use this if you only need direct access to the patched build.
+
+#### npm
+
+```sh
+npm install vue-template-compiler-patched --save-dev
+```
+
+#### pnpm
+
+```sh
+pnpm add vue-template-compiler-patched --save-dev
+```
+
+#### Yarn
+
+```sh
+yarn add vue-template-compiler-patched --dev
+```
+
+```js
 const compiler = require('vue-template-compiler-patched')
 ```
 
