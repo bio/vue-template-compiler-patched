@@ -1,0 +1,35 @@
+{
+  "name": "vue-template-compiler-patched",
+  "version": "2.7.16.patch.1",
+  "description": "Patched template compiler for Vue 2.0 (v2.7.16) addressing CVE-2024-6783",
+  "main": "src/index.js",
+  "unpkg": "src/browser.js",
+  "jsdelivr": "src/browser.js",
+  "browser": "src/browser.js",
+  "types": "src/types/index.d.ts",
+  "files": [
+    "src/types/*.d.ts",
+    "src/*.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bio/vue-template-compiler-patched.git"
+  },
+  "keywords": [
+    "vue",
+    "compiler"
+  ],
+  "author": "Evan You",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bio/vue-template-compiler-patched/issues"
+  },
+  "homepage": "https://github.com/bio/vue-template-compiler-patched#readme",
+  "dependencies": {
+    "de-indent": "^1.0.2",
+    "he": "^1.2.0"
+  },
+  "devDependencies": {
+    "vue": "file:../.."
+  }
+}
