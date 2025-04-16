@@ -2,14 +2,14 @@
   "name": "vue-template-compiler-patched",
   "version": "2.7.16.patch.1",
   "description": "Patched template compiler for Vue 2.0 (v2.7.16) addressing CVE-2024-6783",
-  "main": "src/index.js",
-  "unpkg": "src/browser.js",
-  "jsdelivr": "src/browser.js",
-  "browser": "src/browser.js",
-  "types": "src/types/index.d.ts",
+  "main": "index.js",
+  "unpkg": "browser.js",
+  "jsdelivr": "browser.js",
+  "browser": "browser.js",
+  "types": "types/index.d.ts",
   "files": [
-    "src/types/*.d.ts",
-    "src/*.js"
+    "types/*.d.ts",
+    "*.js"
   ],
   "repository": {
     "type": "git",
