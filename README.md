@@ -10,9 +10,9 @@ This package can be used to pre-compile Vue 2.0 templates into render functions 
 
 Choose the installation approach that works best for you.
 
-### Alias
+### Alias installation method
 
-Installs the patched compiler under the original `vue-template-compiler` name, satisfying any peer dependencies or `require('vue-template-compiler')` lookups (e.g. by @vue/test-utils).
+Installs the patched compiler under the original `vue-template-compiler` name, satisfying any peer dependencies or `require('vue-template-compiler')` lookups (e.g. by `@vue/test-utils`).
 
 #### npm
 
@@ -32,7 +32,7 @@ pnpm add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1
 yarn add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1 --dev
 ```
 
-### Standard
+### Standard installation method
 
 Installs the patched compiler under its scoped name. Use this if you only need direct access to the patched build.
 
@@ -54,6 +54,7 @@ pnpm add vue-template-compiler-patched --save-dev
 yarn add vue-template-compiler-patched --dev
 ```
 
+#### Usage
 ```js
 const compiler = require('vue-template-compiler-patched')
 ```
