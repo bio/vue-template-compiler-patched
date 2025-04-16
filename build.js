@@ -3875,10 +3875,10 @@ function transformNode$1(el, options) {
 }
 function genData$2(el) {
     let data = '';
-    if (el.staticClass) {
+    if (Object.prototype.hasOwnProperty.call(el, 'staticClass')) {
         data += `staticClass:${el.staticClass},`;
     }
-    if (el.classBinding) {
+    if (Object.prototype.hasOwnProperty.call(el, 'classBinding')) {
         data += `class:${el.classBinding},`;
     }
     return data;
@@ -3925,10 +3925,10 @@ function transformNode(el, options) {
 }
 function genData$1(el) {
     let data = '';
-    if (el.staticStyle) {
+    if (Object.prototype.hasOwnProperty.call(el, 'staticStyle')) {
         data += `staticStyle:${el.staticStyle},`;
     }
-    if (el.styleBinding) {
+    if (Object.prototype.hasOwnProperty.call(el, 'styleBinding')) {
         data += `style:(${el.styleBinding}),`;
     }
     return data;

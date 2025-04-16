@@ -4,7 +4,12 @@ try {
 
 var packageName = require('./package.json').name
 var packageVersion = require('./package.json').version
-if (vueVersion && vueVersion !== packageVersion) {
+
+function getBaseVersion(v) {
+  return String(v).split(/\.patch/)[0]
+}
+
+if (vueVersion && vueVersion !== getBaseVersion(packageVersion)) {
   var vuePath = require.resolve('vue')
   var packagePath = require.resolve('./package.json')
   throw new Error(

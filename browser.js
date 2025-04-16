@@ -3980,10 +3980,10 @@
 	}
 	function genData$2(el) {
 	    var data = '';
-	    if (el.staticClass) {
+	    if (Object.prototype.hasOwnProperty.call(el, 'staticClass')) {
 	        data += "staticClass:".concat(el.staticClass, ",");
 	    }
-	    if (el.classBinding) {
+	    if (Object.prototype.hasOwnProperty.call(el, 'classBinding')) {
 	        data += "class:".concat(el.classBinding, ",");
 	    }
 	    return data;
@@ -4030,10 +4030,10 @@
 	}
 	function genData$1(el) {
 	    var data = '';
-	    if (el.staticStyle) {
+	    if (Object.prototype.hasOwnProperty.call(el, 'staticStyle')) {
 	        data += "staticStyle:".concat(el.staticStyle, ",");
 	    }
-	    if (el.styleBinding) {
+	    if (Object.prototype.hasOwnProperty.call(el, 'styleBinding')) {
 	        data += "style:(".concat(el.styleBinding, "),");
 	    }
 	    return data;
