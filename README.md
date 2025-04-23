@@ -1,6 +1,6 @@
 # vue-template-compiler-patched
 
-A security-patched version of vue-template-compiler to fix the prototype pollution vulnerability (CVE-2024-6783).
+A security-patched version of vue-template-compiler to fix the prototype pollution vulnerability (CVE-2024-6783) and the ReDoS vulnerability (CVE-2024-9506).
 
 > This package is auto-generated. For pull requests please see [src/platforms/web/entry-compiler.js](https://github.com/vuejs/vue/tree/dev/src/platforms/web/entry-compiler.js).
 
@@ -17,19 +17,19 @@ Installs the patched compiler under the original `vue-template-compiler` name, s
 #### npm
 
 ```sh
-npm install vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1 --save-dev
+npm install vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.2 --save-dev
 ```
 
 #### pnpm
 
 ```sh
-pnpm add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1 --save-dev
+pnpm add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.2 --save-dev
 ```
 
 #### Yarn
 
 ```sh
-yarn add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.1 --dev
+yarn add vue-template-compiler@npm:vue-template-compiler-patched@^2.7.16-patch.2 --dev
 ```
 
 ### Standard installation method

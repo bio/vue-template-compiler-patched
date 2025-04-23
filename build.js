@@ -422,7 +422,7 @@ function parseHTML(html, options) {
             let endTagLength = 0;
             const stackedTag = lastTag.toLowerCase();
             const reStackedTag = reCache[stackedTag] ||
-                (reCache[stackedTag] = new RegExp('([\\s\\S]*?)(</' + stackedTag + '[^>]*>)', 'i'));
+                (reCache[stackedTag] = new RegExp('((?:[^<]+|<(?!/' + stackedTag + '[^>]*>))*)(</' + stackedTag + '[^>]*>)', 'i'));
             const rest = html.replace(reStackedTag, function (all, text, endTag) {
                 endTagLength = endTag.length;
                 if (!isPlainTextElement(stackedTag) && stackedTag !== 'noscript') {

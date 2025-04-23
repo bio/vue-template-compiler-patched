@@ -466,7 +466,7 @@
 	            var endTagLength_1 = 0;
 	            var stackedTag_1 = lastTag.toLowerCase();
 	            var reStackedTag = reCache[stackedTag_1] ||
-	                (reCache[stackedTag_1] = new RegExp('([\\s\\S]*?)(</' + stackedTag_1 + '[^>]*>)', 'i'));
+	                (reCache[stackedTag_1] = new RegExp('((?:[^<]+|<(?!/' + stackedTag_1 + '[^>]*>))*)(</' + stackedTag_1 + '[^>]*>)', 'i'));
 	            var rest = html.replace(reStackedTag, function (all, text, endTag) {
 	                endTagLength_1 = endTag.length;
 	                if (!isPlainTextElement(stackedTag_1) && stackedTag_1 !== 'noscript') {

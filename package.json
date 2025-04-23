@@ -1,7 +1,7 @@
 {
   "name": "vue-template-compiler-patched",
-  "version": "2.7.16-patch.1",
-  "description": "Patched Vue 2.7.16 template compiler with XSS fix for CVE‑2024‑6783",
+  "version": "2.7.16-patch.2",
+  "description": "Patched Vue 2.7.16 template compiler to fix XSS (CVE-2024-6783) and ReDoS (CVE-2024-9506) security vulnerabilities.",
   "main": "index.js",
   "unpkg": "browser.js",
   "jsdelivr": "browser.js",
